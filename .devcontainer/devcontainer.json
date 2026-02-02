@@ -1,0 +1,22 @@
+{
+    "name": "OpenClaw Workspace",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "forwardPorts": [18789],
+    "portsAttributes": {
+        "18789": {
+            "label": "OpenClaw Dashboard",
+            "onAutoForward": "notify"
+        }
+    },
+    "postCreateCommand": "openclaw --version",
+    "remoteUser": "node"
+}
