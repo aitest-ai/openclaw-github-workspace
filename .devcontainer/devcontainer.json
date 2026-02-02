@@ -17,6 +17,9 @@
             "onAutoForward": "notify"
         }
     },
-    "postCreateCommand": "openclaw --version",
-    "remoteUser": "node"
+    "postCreateCommand": "/home/node/.nvm/versions/node/v22.13.0/bin/openclaw --version",
+    "remoteUser": "node",
+    "containerEnv": {
+        "PATH": "/home/node/.nvm/versions/node/v22.13.0/bin:${containerEnv:PATH}"
+    }
 }
