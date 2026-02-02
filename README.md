@@ -1,8 +1,10 @@
 # OpenClaw GitHub Workspace
 
 這個儲存庫旨在讓你能夠在 GitHub Codespaces 中輕鬆運行 [OpenClaw](https://openclaw.ai/)。
+### 快速開始
 
-## 快速開始
+> **注意**：如果你之前已經建立了 Codespace 但遇到 `openclaw: command not found` 錯誤，請**刪除舊的 Codespace 並重新建立**，或者在 Codespace 中點擊左下角的齒輪圖示並選擇 **"Rebuild Container"** 以套用修正。
+
 
 1.  **在 Codespaces 中開啟**：點擊儲存庫頁面上的 **Code** 按鈕，選擇 **Codespaces** 標籤，然後點擊 **Create codespace on main**。
 2.  **執行初始化**：在 Codespace 終端機中執行以下指令來設定你的 OpenClaw：
