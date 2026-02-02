@@ -17,6 +17,6 @@
             "onAutoForward": "notify"
         }
     },
-    "postCreateCommand": "openclaw --version",
+    "postCreateCommand": "sudo ln -sf $(npm root -g)/openclaw/openclaw.mjs /usr/local/bin/openclaw && sudo chmod +x /usr/local/bin/openclaw && openclaw --version",
     "remoteUser": "node"
 }

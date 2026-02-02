@@ -1,9 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/javascript-node:22
 
-# 安裝 OpenClaw 並強制建立符號連結到 /usr/local/bin
-RUN curl -fsSL https://openclaw.ai/install.sh | bash -s -- --non-interactive && \
-    ln -sf $(npm root -g)/openclaw/openclaw.mjs /usr/local/bin/openclaw && \
-    chmod +x /usr/local/bin/openclaw
+# 安裝 OpenClaw。我們使用官方腳本，並在啟動時處理路徑問題，避免建置階段失敗。
+RUN curl -fsSL https://openclaw.ai/install.sh | bash -s -- --non-interactive
 
 # 設定工作目錄
 WORKDIR /workspaces/openclaw-github-workspace
