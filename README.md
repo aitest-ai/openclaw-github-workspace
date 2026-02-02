@@ -14,7 +14,11 @@
     ```bash
     openclaw gateway
     ```
-4.  **訪問儀表板**：Codespace 會自動偵測到 `18789` 埠位。點擊彈出的通知或在 **Ports** 標籤中開啟瀏覽器，即可訪問 OpenClaw 儀表板。
+4.  **安裝 GitHub 技能（選用）**：如果你想讓 OpenClaw 能夠操作 GitHub（如建立 Issue 或 PR），可以執行：
+    ```bash
+    bash setup-skills.sh
+    ```
+5.  **訪問儀表板**：Codespace 會自動偵測到 `18789` 埠位。點擊彈出的通知或在 **Ports** 標籤中開啟瀏覽器，即可訪問 OpenClaw 儀表板。
 
 ## 注意事項
 
